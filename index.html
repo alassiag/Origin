@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+		<head>
+
+			<title>Flow 1</title>
+		 
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximun-scale=1, minimun-scale=1">          
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		 	<link rel="stylesheet" href="../practica1/assets/css/estilos.css">
+		 	<link rel="icon" href="../practica1/assets/img/XDicon.png">
+		 	
+		</head>
+	<body>
+	  <header>
+        <section class="container_nav">
+           <a href="#home"> 
+            <img src="assets/img/top-logo.svg" alt="top_logo">
+           </a>
+            <nav class="menu_header">
+	          <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+	            <li><a href="#products">Products</a></li>
+	            <li><a href="#service">Services</a></li>
+	            <li><a href="#contact">Contact</a></li>
+	          </ul>
+            </nav>
+        </section>
+      </header>
+	   <main>
+        <article id="container_main"> 
+        <section class="home"  id="home">
+              <img src="assets/img/slider.png" alt="fondo_inicio"> 
+               <div>
+                   <h1>Sed ut perspiciatis<br>           
+	               unde omnis iste natus</h1>
+                   <p>Sed ut perspiciatis unde omnis iste natus error<br>
+                   sit voluptatem accusantium doloremque</p>
+                   <a href="">Read more</a><br>
+                   <div class="home__slider">
+                      <ul>
+                          <li><a href="">A</a></li>
+                          <li><a href="">B</a></li>
+                          <li><a href="">C</a></li>
+                      </ul>
+                   </div>
+               </di>
+        </section>
+        <section class="about" id="about">                
+                <div>
+                    <h1>We Help Businesses</h1>  
+                    <h2>Grow and Innovate</h2>
+                                                       
+                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+	               </p>  
+                </div>
+         </section> 
+            
+        <section class="contenedor_products" id="products">    
+                <div class="contenedor_image">
+                       <img src="assets/img/section3-image.png" alt="Nemo Enim">
+                 <div class="fondo_naranja">
+                    <p>Sed ut perspiciatis</p>
+                    <h1>Nemo Enim</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error    sit voluptatem 
+                        accusantium doloremque laudantium, totam rem aperiam.</p>
+                 </div>
+               </div>
+           </section> 
+        <section class="Contenedor_Service" id="service">
+            <img src="assets/img/section4-image.png">
+            <!--- Acordeon --->
+            <div class="acordeon" >
+                <div class="acordeon__item">
+                    <input type="radio" name="acordeon" id="item1" >
+                    <label for="item1" class="acordeon__titulo">Sed ut perspiciatisimg </label>  
+                    <p class="acordeon__contenido">Lorem ipsum es un texto de marcador de posición. Los diseñadores y desarrolladores lo utilizan comúnmente para crear el documento o el contenido del sitio web sin tener el contenido original.</p>
+                    
+                </div>
+                
+                <div class="acordeon__item">
+                    <input type="radio" name="acordeon" id="item2">
+                    <label for="item2" class="acordeon__titulo">Ut enim ad minima veniam</label>
+                    <p class="acordeon__contenido">Lorem ipsum es un texto de marcador de posición. Los diseñadores y desarrolladores lo utilizan comúnmente para crear el documento o el contenido del sitio web sin tener el contenido original.</p>
+                </div>
+                
+                <div class="acordeon__item">
+                    <input type="radio" name="acordeon" id="item3">
+                    <label for="item3" class="acordeon__titulo">Sit amet, consectetur, adipisci</label>
+                    <p class="acordeon__contenido">Lorem ipsum es un texto de marcador de posición. Los diseñadores y desarrolladores lo utilizan comúnmente para crear el documento o el contenido del sitio web sin tener el contenido original.</p>
+                </div>          
+            </div>   
+        </section>   
+            <!---  formulario Contacto --->
+            
+        <section class="contenedor_contact" id="contact">
+            <div class="contact__image">
+             <img src="assets/img/contact-image.png" alt="contacto">
+            </div>
+            <div class="contact__text">
+             <h2>Get in touch</h2>
+             <h3>We are hiring!</h3>  
+            </div>
+            <div class="form">
+              <form action="enviar.php" method="post">
+			    <input type="text" placeholder="Name" name="nombre" required>
+                <input type="email" placeholder="E-mail" name="correo" required></label>
+                <input type="tel" placeholder="Phone" name="telefono"  required>
+			    <textarea placeholder="Message" name="mensaje"  required></textarea>			
+			     <input type="submit" value="Send" id="boton">        
+		      </form>    
+            </div>
+        </section>    
+        </article>
+	   </main>
+	   <footer>
+        <div class="contenedor_footer">
+            <p>2020 © All rights reserved.</p>
+            <img src="assets/img/footer-logo.svg" alt="footer_logo" >
+        </div>
+	   </footer>
+	</body>
+</html>	
+
+
