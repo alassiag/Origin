@@ -1,0 +1,476 @@
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+    }
+
+.container_nav {
+    
+    position: fixed; 
+    z-index: 200; 
+    width: 100%;
+    height: 68px;
+    background-color: rgba(3,3,3,0.4);
+    border-bottom: 2px solid #e0752f;
+        }
+
+.container_nav img {
+    display: flex; 
+    margin-top: 23px;
+    margin-left: 16px; 
+    width: 100px;
+        }
+
+.menu_header  a, ul, li {
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    float: right;
+    margin-top: -6px;
+    color: white;
+    right: 3px;
+    padding-right: 6px;  
+    
+        }
+
+.menu_header a:hover {
+    color: orangered;
+    margin-top: -6px;
+    transition: all 0.3s;
+
+}
+
+.home img {
+    margin: 0;
+    width: 100vw;
+    overflow: hidden;
+            }
+
+.home h1 {
+    position: absolute;  
+    font-size: 1.9rem;
+    line-height: 115%;
+    color: white;
+    margin: 0;
+    top: 100px;
+    left: 16px;
+        }
+
+.home p {
+    position: absolute;
+    font-size: .6rem;
+    color: white;
+    margin: 0;
+    top: 160px;
+    left: 16px;
+        }
+
+.home a {
+    position: absolute;
+    text-decoration: none;
+    color: white;  
+    font-family: 'Roboto', sans-serif; 
+    font-size: .8rem;
+    margin: 0;
+    background: #E0752F;
+    border-radius: 112px;
+    padding: 5px 11px;
+    top: 190px;
+    left: 16px;
+        }
+
+.home ~a:hover {
+    color:#e0752f;
+    background: white;
+  
+   
+}
+.home__slider +a {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 6px;
+    margin-top: 35px;
+    width: 5px;
+    font-size: 1.2rem;
+    background: none;
+    color: #E0752F
+}
+
+
+.about {
+    top: 0;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-bottom: 18%; 
+    border-left: solid 12px #e0752f; 
+    }
+
+.about h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 90%;
+    padding-top: 21px;
+    padding-left: 10%;      
+    }
+
+.about h2 {
+   
+    font-size: 1.6rem;
+    color: #e0752f;
+    margin: 0;    
+    padding-left: 10%;
+    }
+
+.about p {
+    position: absolute; 
+    color: black;
+    font-family: 'Roboto', sans-serif; 
+    font-size: .7rem;
+    margin-left: 10%;
+    width: 62%;   
+    }
+
+.contenedor_products {
+    position: relative; 
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    padding-top: 45px;
+    background: linear-gradient(90deg, #F2F4F1 70%, #DCE1DA 30%);
+    padding-bottom: 45px;
+}
+.contenedor_image img {
+    position: relative;
+    display:block;
+    padding-left: 62px;
+    width: 420px; 
+    height: 190px;
+  
+}
+.fondo_naranja {
+    position: absolute;
+    background: #e0752f;
+    width: 175px;
+    height: 105px;
+    margin-left: 245px;
+    margin-top: -105px;
+}
+.fondo_naranja h1 {
+    margin: 0;
+    color: white;
+    padding-top: 0;
+    padding-left: 15px;
+    font-size: 1.7em;
+    line-height: 16px;
+}
+.fondo_naranja p {
+    color: white;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: .7em;
+}  
+
+.fondo_naranja ul li {  
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    display:block;    
+} 
+
+   /* --- hasta aca --- */
+.Contenedor_Service {
+    position: relative;
+    font-size: 1rem;
+    margin: 0; 
+    width: 100vw;
+    height: auto;
+
+}
+.Contenedor_Service img {
+    position: absolute;
+    margin: 0;
+    width: 67vw;
+    height: 290px;
+    overflow: hidden;
+    right: 0;  
+}
+
+.acordeon { 
+    position: absolute;
+    float: left;
+    margin-top: 8%;
+    margin-left: 22px;
+    border: 1px solid #e2e2e2;
+    width: 270px;
+    height: auto; 
+    background: white;
+    
+}
+.acordeon input {
+    display: none;
+    float: right;
+}
+
+.acordeon__titulo {
+    display:block;
+    background: #F1F1F1;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 1rem;
+    padding:  5px 0px 5px 18px;
+    cursor: pointer;
+}
+
+.acordeon__titulo::after {
+    content: url(../../assets/img/Icon-down.svg);
+    float:right;
+    padding-right: 8px;
+}
+.acordeon__titulo:hover { 
+    background: rgba(223,223,223,0.8);
+}
+.acordeon__contenido {
+
+    font-size: .8rem;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding-left: 18px;
+    transition: all 0.25s;
+    
+}
+
+.acordeon input:checked ~ .acordeon__contenido {
+    height: auto;
+    margin: 8px 0;
+   
+}
+
+.acordeon input:checked ~  .acordeon__titulo::after { 
+    padding-left: 8px;
+    transition: transform 0.45s;
+    transform: rotate(180deg);
+
+}
+
+
+.contenedor_contact {
+    padding-top: 45px;
+    position: relative; 
+    margin-top: 285px;
+    background: linear-gradient(90deg, #F2F4F1 70%, #DCE1DA 30%);
+    padding-bottom: 45px;
+ 
+}
+.form {
+    position: relative;
+    display: block;
+    left: 22px;
+	width: 51%;
+    height: 100%;
+    border: none;
+}
+
+.contact__text h2 {
+    padding-left: 22px;
+	color: #111;
+	font-size: 1.6rem;
+    line-height: 12%;
+}
+
+.contact__text h3 { 
+    padding-left: 22px;
+	color: #e0752f;
+	font-size: 1.6rem;
+    line-height: 12%;
+}
+
+input, textarea {
+    display: block;
+	width: 70%;
+	padding: 7px;
+    padding-left: 0;
+	font-size: 1rem;
+    background: none;
+    align-items: baseline;
+	border: none;
+    border-bottom: 1px solid #444;
+    resize: none;
+    
+}
+.contenedor_contact img {
+    margin-top: 32px;
+    position:absolute;
+    display: block;
+    width: 50%; 
+    right: 22px;
+}
+
+#boton {
+    margin-top: 18px;
+    background: #e0752f;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 2px;
+    color: white;
+    width: 71px;
+    cursor: pointer;
+}
+.contenedor_footer {
+    position:absolute;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1rem;
+    width: 100vw;
+    height: 53px;
+    background: rgba(1,1,1, 0.9);
+}
+.contenedor_footer img {
+    width: 8%;
+    position: relative;
+  
+   
+} 
+
+@media screen and (min-width:768px) {
+    
+    .container_nav {
+        height: 78px;
+        }
+    
+    .container_nav img {
+        
+        width: 140px;
+        margin-top: 14px;
+        margin-left: 62px;    
+        } 
+    
+    .menu_header a,li,ul {
+        font-size: 1.6rem;
+        right: 8px;
+        padding-right: 12px;  
+        }
+    
+    .home img {
+        width: 100vw;   
+     
+        }
+    
+    .home h1 {
+        font-size: 3rem;
+        top: 150px;
+        left: 62px;
+        }
+    
+    .home p {
+        font-size: .95rem;
+        top: 250px;
+        left: 62px;
+        }
+    
+    .home a {
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 12px 24px;
+        top: 300px;
+        left: 62px;
+        }
+    
+    .about {
+    border-left: solid 18px #e0752f; 
+    }
+
+    .about h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    line-height: 90%;
+    }
+    
+    .about h2 {
+    font-size: 2.6rem;
+    margin: 0;    
+    }
+    
+    .about p {   
+    font-size: 1rem;     
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+     .container_nav {
+        height: 98px;
+        }
+    
+.container_nav img {
+    width: 150px;
+    margin-top: 18px;
+    margin-left: 112px;    
+                    }
+    
+.menu_header a {
+    font-size: 2rem;
+    right: 13px;
+    top: -11px;
+    padding-right: 24px;  
+    }
+    
+    .home img {
+        width: 100%;
+  
+        }
+    
+    .home h1 {
+        font-size: 4.6rem;
+        top: 240px;
+        left: 112px;
+        }
+    
+    .home p {
+        font-size: 1.5rem;
+        top: 400px;
+        left: 112px;
+        }
+    
+    .home a {
+        font-size: 2rem;
+        border-radius: 25px;
+        padding: 12px 21px;
+        top: 490px;
+        left: 112px;
+        }
+    
+    .about h1 {   
+        font-size: 3.6rem;
+        line-height: 90%;
+        }
+    
+    .about h2 {
+        font-size: 3.6rem;
+
+        }
+    
+    .about p {
+    
+        font-size: 1.6rem;     
+        }
+}
